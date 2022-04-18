@@ -1,16 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
-import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 const Home = () => {
 
-    // const [card, setCard] = useState([]);
-    // useEffect(() => {
-    //     fetch('load-data.json')
-    //         .then(res => res.json())
-    //         .then(data => setCard(data));
-    // }, [])
     return (
         <div >
 

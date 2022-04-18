@@ -1,0 +1,38 @@
+.login-head {
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(13, 124, 235);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.login-style {
+    border: 2px solid rgb(238, 163, 163);
+    border-radius: 20px;
+    background-color: rgb(241, 177, 177);
+    width: 650px;
+    height: 550px;
+    margin-top: 40px;
+    margin-left: 400px;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 10px 10px rgb(181, 162, 162);
+
+}
+
+.button-style {
+    background-color: rgb(8, 183, 183);
+    border: 2px solid rgb(8, 183, 183);
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 130px;
+    padding-right: 130px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.form-link {
+    text-decoration: none;
+    color: rgb(205, 19, 19);
+    cursor: pointer;
+}
