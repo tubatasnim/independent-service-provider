@@ -18,3 +18,13 @@
     font-weight: bold;
     padding-top: 40px;
 }
+
+.about-details {
+    margin-left: 480px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(246, 224, 99);
+    border-radius: 20px;
+    background-color: rgb(246, 224, 99);
+    padding: 20px;
+    width: 450px;
+}

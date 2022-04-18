@@ -19,9 +19,15 @@
 .ans-cart {
     border: 2px solid rgb(95, 241, 226);
     background-color: rgb(39, 206, 235);
-    height: 400px;
-    width: 350px;
-    padding-left: 20px;
-    padding-top: 10px;
+    height: 480px;
+    width: 450px;
+
+    padding: 10px;
     border-radius: 20px;
+}
+
+.ans-cart h6 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
