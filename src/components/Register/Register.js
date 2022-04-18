@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { sendEmailVerification } from 'firebase/auth';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -39,7 +40,14 @@ const Register = () => {
         }
         createUserWithEmailAndPassword(email, password);
 
+        verifyEmail();
+    }
 
+    const verifyEmail = () => {
+        sendEmailVerification(user)
+            .then(() => {
+                console.log('Email verifycation sent');
+            })
     }
     return (
         <div className='registetion'>

@@ -1,6 +1,19 @@
 # Firebase-Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://firebase-projects.netlify.app).
+
+-line 1:first i add home page for my projects.
+ -line 2:second i add all authentication system with email password in my site for project.
+  -line 3:third i add check out  and before log in its a protected route . 
+  -line 4:forth i add blogs for answer to the question.
+  -line 5:forth i add about me for my details.
+
+  ## Uses Framework 
+  -1.react app
+  -2.firebase for authentication
+  -3.react route
+  -4.react bootstrap
+  -5.for deploy i used netlify.
 
 ## Available Scripts
 

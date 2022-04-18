@@ -1,0 +1,37 @@
+.checkOut-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 2px solid rgb(236, 228, 126);
+    border-radius: 20px;
+    background-color: rgb(236, 228, 126);
+    padding-right: 20px;
+    margin: 20px;
+}
+
+.check-head {
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(13, 124, 235);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.checkOut-style img {
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.check-button {
+    background-color: rgb(8, 183, 183);
+    border: 2px solid rgb(8, 183, 183);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 17px;
+}
