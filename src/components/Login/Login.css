@@ -20,6 +20,10 @@
 
 }
 
+.toasts {
+    margin-bottom: 40px;
+}
+
 .button-style {
     background-color: rgb(8, 183, 183);
     border: 2px solid rgb(8, 183, 183);

@@ -5,7 +5,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { sendEmailVerification } from 'firebase/auth';
+import { sendEmailVerification, sendPasswordResetEmail } from 'firebase/auth';
+import Toast from 'react-bootstrap/Toast';
+
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -39,14 +41,21 @@ const Register = () => {
             return;
         }
         createUserWithEmailAndPassword(email, password);
-
         verifyEmail();
+
     }
 
+
     const verifyEmail = () => {
-        sendEmailVerification(user)
+        sendEmailVerification(auth.currentUser)
             .then(() => {
                 console.log('Email verifycation sent');
+            })
+    }
+    const handlePasswordReset = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                console.log("email sent")
             })
     }
     return (
@@ -76,6 +85,15 @@ const Register = () => {
                         Register
                     </Button>
                     <p className='pt-3'>Already have an account?<Link className="form-link" to="/login">Log in</Link></p>
+                    <Toast className='toasts'>
+                        <Toast.Header>
+
+
+
+                        </Toast.Header>
+
+                        <Toast.Body><Button onClick={handlePasswordReset} variant="link">Reset Password?</Button></Toast.Body>
+                    </Toast>
                 </form>
             </div>
         </div>

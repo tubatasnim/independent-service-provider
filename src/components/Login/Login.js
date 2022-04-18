@@ -5,6 +5,8 @@ import Button from 'react-bootstrap/Button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Toast from 'react-bootstrap/Toast';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -32,6 +34,12 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true });
     }
+    const handlePasswordReset = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                console.log("email sent")
+            })
+    }
     return (
         <div className='login-style'>
             <h1 className='login-head'>Login</h1>
@@ -57,6 +65,15 @@ const Login = () => {
                         Log in
                     </Button>
                     <p className='pt-3'>New to world traveler?<Link className="form-link" to="/register">Create an account</Link></p>
+                    <Toast className='toasts'>
+                        <Toast.Header>
+
+
+
+                        </Toast.Header>
+
+                        <Toast.Body><Button onClick={handlePasswordReset} variant="link">Reset Password?</Button></Toast.Body>
+                    </Toast>
                 </form>
             </div>
         </div >
