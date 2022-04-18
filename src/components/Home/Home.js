@@ -1,9 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
 import './Home.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-
+    const navigate = useNavigate();
     return (
         <div >
 
@@ -11,7 +12,7 @@ const Home = () => {
                 <div>
                     <h1 className="head-title">Travel with Us!!!</h1>
                     <p>This is our World Travel center.where we introduce our customer how to travel different place.If your Stateside visit is the only trip you're planning to take this year. If you're managing to get away more than once, then our Annual cover could work out to be a cheaper option.. Depending on how many countries you travel to, and whether you choose to buy any additional cover, costs for Backpacker insurance to the ...</p>
-                    <button className='home-button'>Booking Now</button>
+                    <button onClick={() => navigate('/checkOut')} className='home-button'>Booking Now</button>
                 </div>
                 <div className='home-img'>
                     < img src="images/travel.webp" alt="" />
@@ -30,7 +31,7 @@ const Home = () => {
                         <Card.Text>
                             price: 8000$
                         </Card.Text>
-                        <Button variant="primary">Go CheckOut</Button>
+                        <Button onClick={() => navigate('/checkOut')} variant="primary">Go CheckOut</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '18rem' }}>
@@ -44,7 +45,7 @@ const Home = () => {
                         <Card.Text>
                             price: 3000$
                         </Card.Text>
-                        <Button variant="primary">Go CheckOut</Button>
+                        <Button onClick={() => navigate('/checkOut')} variant="primary">Go CheckOut</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '18rem' }}>
@@ -58,7 +59,7 @@ const Home = () => {
                         <Card.Text>
                             price: 2000$
                         </Card.Text>
-                        <Button variant="primary">Go CheckOut</Button>
+                        <Button onClick={() => navigate('/checkOut')} variant="primary">Go CheckOut</Button>
                     </Card.Body>
                 </Card>
 
