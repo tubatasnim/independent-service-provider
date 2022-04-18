@@ -5,6 +5,7 @@
     margin-top: 70px;
     padding-left: 40px;
     gap: 50px;
+
 }
 
 .head-title {
@@ -66,6 +67,7 @@
     color: white;
     font-size: 15px;
     padding-top: 30px;
+
 }
 
 .footer-title {
@@ -73,4 +75,69 @@
     font-size: 12px;
     text-align: center;
     padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .home-section {
+        display: inline;
+        padding-left: 30px;
+        width: 100%;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .card-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding-left: 100px;
+        margin-bottom: 80px;
+    }
+
+    .footer-style {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        padding-left: 100px;
+        padding-right: 100px;
+        color: white;
+        font-size: 15px;
+        padding-top: 30px;
+    }
+
+    .footers {
+        background-color: black;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .home-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 70px;
+        padding-left: 40px;
+        gap: 50px;
+
+    }
+
+    .card-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding-left: 100px;
+        margin-bottom: 80px;
+    }
+
+    .footer-style {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        padding-left: 100px;
+        color: white;
+        font-size: 15px;
+        padding-top: 30px;
+
+    }
 }

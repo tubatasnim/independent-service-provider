@@ -22,3 +22,34 @@
     font-weight: bold;
     font-size: 35px;
 }
+
+@media only screen and (max-width: 767px) {
+    .header-section {
+        width: 550px;
+    }
+
+    .header-section h4 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+@media only screen and(min-width:768px) {
+    .header-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        border: 2px solid rgb(156, 232, 245);
+        background-color: rgb(116, 202, 245);
+        box-shadow: 10px 10px 10px 10px rgb(226, 215, 215);
+        margin-top: auto;
+
+
+    }
+
+    .header-section h4 {
+        font-weight: bold;
+        font-size: 35px;
+    }
+}
