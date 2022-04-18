@@ -1,0 +1,20 @@
+.about-head {
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(13, 124, 235);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.pic-style {
+    width: 300px;
+    height: 450px;
+    margin-left: 550px;
+    padding-top: 40px;
+}
+
+.about-name {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+}

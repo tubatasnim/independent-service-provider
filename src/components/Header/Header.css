@@ -14,8 +14,8 @@
 .header-section nav link {}
 
 .header-name {
-    margin-right: 20px;
-    gap: 20px;
+    text-decoration: none;
+
 }
 
 .header-section h4 {

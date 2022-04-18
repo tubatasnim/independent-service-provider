@@ -1,0 +1,20 @@
+.register-head {
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(13, 124, 235);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.registetion {
+    border: 2px solid rgb(238, 163, 163);
+    border-radius: 20px;
+    background-color: rgb(241, 177, 177);
+    width: 500px;
+    height: 550px;
+    margin-top: 40px;
+    margin-left: 400px;
+    margin-bottom: 40px;
+
+}

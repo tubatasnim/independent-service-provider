@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <div className='header-section'>
             <div> <h4>World Travel</h4></div>
-            <div className='header-name'>
-                <nav>
+            <div >
+                <nav className='header-name'>
                     <Link to="/">Home</Link>
                     <Link to="/checkOut">Check Out</Link>
                     <Link to="/blogs">Blogs</Link>

@@ -1,0 +1,27 @@
+.blog-head {
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(13, 124, 235);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.ans-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 10px;
+
+}
+
+.ans-cart {
+    border: 2px solid rgb(95, 241, 226);
+    background-color: rgb(39, 206, 235);
+    height: 400px;
+    width: 350px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+}

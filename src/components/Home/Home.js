@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
             </div>
             <h1 className='services-head'>Our Services</h1>
-            <div className='card-section'>
+            <div className='card-section mx-3'>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="images/stay-1.jpg" />
                     <Card.Body>
